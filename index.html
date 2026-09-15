@@ -15,23 +15,19 @@
     </style>
   </head>
   <body>
+    <h2>Websites</h2>
+    <a href="https://dnrweqffuwjtx.cloudfront.net/" target="_blank" class="link-item">[Node 6.01] <span class="link-desc">Cloudfront</span></a>
+    <a href="https://slope-pro.github.io/" target="_blank" class="link-item">[Node 6.02] <span class="link-desc">slope-pro</span></a>
+    <a href="https://neal-fun" target="_blank" class="link-item">[Node 6.02] <span class="link-desc">neal-fun</span></a>
+    <a href="https://www.google.com/search?q=%E2%80%AAGoogle+games&sca_esv=bc87673d3ad1280f&hl=en&ei=Ycz4abfqJeS9ptQP8b7k4Ag&biw=1366&bih=599&ved=0ahUKEwj3nvLkiaCUAxXknokEHXEfGYwQ4dUDCBE&uact=5&oq=%E2%80%AAGoogle+games&gs_lp=Egxnd3Mtd2l6LXNlcnAiD-KAqkdvb2dsZSBnYW1lczIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSIQxUABYxSVwAHgBkAECmAHDCqAB30iqAQszLTEuMS4xLjIuNbgBA8gBAPgBAZgCBqACrinCAgIQJsICCBAAGIAEGKIEwgIFEAAY7wXCAgQQABgemAMAkgcJNC0yLjAuMi4yoAfxLbIHCTQtMi4wLjIuMrgHrinCBwMzLTbIB0WACAE&sclient=gws-wiz-serp&safe=active&ssui=on" target="_blank" class="link-item">[Node 6.02] <span class="link-desc">  </span></a>
+    
     
     <script>
         document.addEventListener('keydown', function(event) {
-            // 1. 紧急隐藏：按左上角 Esc 键，0.01 秒内把当前网页彻底变更为 Google Docs
+            //紧急隐藏：按左上角 Esc 键，0.01 秒内把当前网页彻底变更为 Google Docs
             if (event.key === 'Escape') {
                 sessionStorage.setItem('restoreCheckpoint', window.location.href);
                 window.location.href = 'https://google.com';
-            }
-            
-            // 2. 悄悄变回：警报解除后，在同一个标签页按下数字 1 左边的 ` 键（波浪号 ~ 键），瞬间回到摸鱼列表
-            if (event.key === '`') {
-                let savedUrl = sessionStorage.getItem('restoreCheckpoint');
-                if (savedUrl) {
-                    window.location.href = savedUrl;
-                } else {
-                    window.location.href = 'https://aiden12910-12910.github.io/aiden/';
-                }
             }
         });
     </script>
