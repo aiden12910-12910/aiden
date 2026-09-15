@@ -1,83 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>w̶̧̦̪̪̋͆͞ę̷͇̖̉͝b̷̨̩̎͞</title>
+    <title>My Unblocked Sites Cluster</title>
     <style>
-        body { font-family: "Times New Roman", Times, serif; line-height: 1.5; color: #333; max-width: 850px; margin: 30px auto; padding: 0 20px; background-color: #fff; }
-        h1 { font-size: 20px; border-bottom: 2px solid #111; padding-bottom: 5px; font-weight: bold; }
-        h2 { font-size: 15px; margin-top: 20px; color: #444; text-transform: uppercase; letter-spacing: 0.5px; }
-        .meta { font-size: 12px; color: #666; margin-bottom: 20px; font-style: italic; }
-        .link-item { display: block; margin-bottom: 12px; font-size: 14px; text-decoration: none; color: #0044cc; }
-        .link-item:hover { text-decoration: underline; background-color: #f5f5f5; }
-        .link-desc { color: #555; font-size: 13px; font-family: sans-serif; }
+        /* 极简清爽的深色系链接列表样式 */
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #121212; color: #fff; padding: 40px; margin: 0; }
+        h1 { font-size: 24px; margin-bottom: 25px; border-bottom: 2px solid #222; padding-bottom: 10px; color: #e0e0e0; }
+        .link-container { display: flex; flex-direction: column; gap: 12px; max-width: 600px; }
+        
+        /* 纯链接按钮样式 */
+        .game-link { font-size: 15px; color: #4da6ff; text-decoration: none; padding: 12px 16px; background: #1e1e1e; border: 1px solid #333; border-radius: 6px; cursor: pointer; transition: all 0.2s ease; }
+        .game-link:hover { background: #2a2a2a; color: #fff; border-color: #4da6ff; }
+
+        /* 全屏覆盖层：平时完全隐藏，点击链接后100%吃掉当前页面 */
+        #secure-backdoor-layer { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 999999; background: #000; }
+        #secure-backdoor-layer iframe { width: 100%; height: 100%; border: none; }
     </style>
-  </head>
-  <body>
-    <h2>Websites</h2>
-    <a href="https://dnrweqffuwjtx.cloudfront.net/" target="_blank" class="link-item">[Node 6.01] <span class="link-desc">Cloudfront</span></a>
-    <a href="https://slope-pro.github.io/" target="_blank" class="link-item">[Node 6.02] <span class="link-desc">slope-pro</span></a>
-    <a href="https://neal-fun" target="_blank" class="link-item">[Node 6.03] <span class="link-desc">neal-fun</span></a>
-    <a href="https://www.google.com/search?q=%E2%80%AAGoogle+games&sca_esv=bc87673d3ad1280f&hl=en&ei=Ycz4abfqJeS9ptQP8b7k4Ag&biw=1366&bih=599&ved=0ahUKEwj3nvLkiaCUAxXknokEHXEfGYwQ4dUDCBE&uact=5&oq=%E2%80%AAGoogle+games&gs_lp=Egxnd3Mtd2l6LXNlcnAiD-KAqkdvb2dsZSBnYW1lczIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSIQxUABYxSVwAHgBkAECmAHDCqAB30iqAQszLTEuMS4xLjIuNbgBA8gBAPgBAZgCBqACrinCAgIQJsICCBAAGIAEGKIEwgIFEAAY7wXCAgQQABgemAMAkgcJNC0yLjAuMi4yoAfxLbIHCTQtMi4wLjIuMrgHrinCBwMzLTbIB0WACAE&sclient=gws-wiz-serp&safe=active&ssui=on" target="_blank" class="link-item">[Node 6.04] <span class="link-desc">google doodles</span></a>
-    <a href="https://www.bilibili.com" target="_blank" class="link-item">[Node 6.05] <span class="link-desc">B站</span></a>
-    <a href="https://d1tm91r4ytbt54.cloudfront.net/2779cbcb-a02f-48a3-9e2e-95a8d123d165/1685483461665/web/index.html" target="_blank" class="link-item">[Node 6.06] <span class="link-desc">minecraft</span></a>
-    <a href="https://" target="_blank" class="link-item">[Node 6.07] <span class="link-desc"></span></a>
-    <a href="https://" target="_blank" class="link-item">[Node 6.08] <span class="link-desc"></span></a>
-    <a href="https://" target="_blank" class="link-item">[Node 6.09] <span class="link-desc"></span></a>
-    <a href="https://" target="_blank" class="link-item">[Node 6.10] <span class="link-desc"></span></a>
-    <!DOCTYPE html>
+</head>
+<body>
 
-
-
-
-    <!-- 1. 网页顶部的假工具栏 -->
-    <div class="toolbar">
-        <b>File</b> &nbsp;&nbsp; Edit &nbsp;&nbsp; View &nbsp;&nbsp; Insert &nbsp;&nbsp; Format &nbsp;&nbsp; Tools &nbsp;&nbsp; Extensions &nbsp;&nbsp; Help
+    <h1>🎮 My Unblocked Games & Sites</h1>
+    
+    <div class="link-container">
+        <!-- 核心功能：全部采用 onclick 触发，强制在同一个标签页内全屏加载 -->
+        <a onclick="openSiteInside('https://d1tm91r4ytbt54.cloudfront.net/2779cbcb-a02f-48a3-9e2e-95a8d123d165/1685483461665/web/index.html')" class="game-link">1. Minecraft Java 1.8.8 (Amazon AWS CDN)</a>
+        <a onclick="openSiteInside('https://bilibili.com')" class="game-link">2. 哔哩哔哩 (Bilibili Main Node)</a>
+        <a onclick="openSiteInside('https://slope-pro.github.io/')" class="game-link">3. Slope Pro (Velocity Simulation)</a>
+        <a onclick="openSiteInside('https://neal.fun')" class="game-link">4. Neal.Fun (Interactive Sandbox)</a>
+        <a onclick="openSiteInside('https://dnrweqffuwjtx.cloudfront.net/')" class="game-link">5. Chromebook Unlocked Hub</a>
+        <a onclick="openSiteInside('https://www.google.com/search?q=%E2%80%AAGoogle+games&sca_esv=bc87673d3ad1280f&hl=en&ei=Ycz4abfqJeS9ptQP8b7k4Ag&biw=1366&bih=599&ved=0ahUKEwj3nvLkiaCUAxXknokEHXEfGYwQ4dUDCBE&uact=5&oq=%E2%80%AAGoogle+games&gs_lp=Egxnd3Mtd2l6LXNlcnAiD-KAqkdvb2dsZSBnYW1lczIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSIQxUABYxSVwAHgBkAECmAHDCqAB30iqAQszLTEuMS4xLjIuNbgBA8gBAPgBAZgCBqACrinCAgIQJsICCBAAGIAEGKIEwgIFEAAY7wXCAgQQABgemAMAkgcJNC0yLjAuMi4yoAfxLbIHCTQtMi4wLjIuMrgHrinCBwMzLTbIB0WACAE&sclient=gws-wiz-serp&safe=active&ssui=on')" class="game-link">6. Google Doodles (First-Party Games)</a>
     </div>
 
-    <!-- 2. 网页中部的假论文纸张（摸鱼入口藏在这里） -->
-    <div class="doc-container">
-        <div class="editable-text" contenteditable="true">
-            <p><b>Title: The Socio-Economic Impact of Industrialization in the Late 18th Century</b></p>
-            
-            <p>During the onset of the industrial era, urban migration patterns shifted drastically due to the implementation of mechanized production frameworks. The aggregation of data fields within municipal sectors 
-            
-                <!-- ======================================================================= -->
-                <!-- 🚨 替换区域【一】：你可以修改下面这个超链接。点击它会原地弹出游戏。-->
-                <!-- 下面括号里的网址，随时可以换成你在上几步自己 Fork 的原版我的世界网址，或者任何别的网站 -->
-                <a href="#" onclick="openSiteInside('https://d1tm91r4ytbt54.cloudfront.net/2779cbcb-a02f-48a3-9e2e-95a8d123d165/1685483461665/web/index.html'); return false;" class="secret-link">
-                    suggests a linear correlation
-                </a> 
-                <!-- 🚨 替换结束。上面的“suggests a linear correlation”是伪装文字，你也可以改成任何英文 -->
-                <!-- ======================================================================= -->
-
-            between factory outputs and demographic changes.</p>
-            
-            <p>Furthermore, contemporary analysis regarding infrastructure deployment indicates that distribution networks were heavily reliant on local resource abundance. Researchers note that fluid dynamics in trade channels often mirrored exponential formulas rather than standard progression variables. As a result, market structures adapted rapidly to external technological stimuli.</p>
-        </div>
+    <!-- 全屏隐藏游戏黑洞容器 -->
+    <div id="secure-backdoor-layer">
+        <iframe id="secure-iframe-target" src="" allow="pointer-lock" allowfullscreen></iframe>
     </div>
 
-
-    <!-- ======================================================================= -->
-    <!-- 3. 全屏游戏隐藏容器（这一段放在 body 里的最下方，它负责游戏的全屏展示） -->
-    <!-- ======================================================================= -->
-    <div id="secure-backdoor-layer" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 999999; background: #000;">
-        <iframe id="secure-iframe-target" src="" style="width: 100%; height: 100%; border: none;" allow="pointer-lock" allowfullscreen></iframe>
-    </div>
-
-
-    <!-- 4. 核心键盘控制脚本（负责点击弹窗和按 Esc 退回） -->
+    <!-- 核心控制逻辑脚本 -->
     <script>
-        // 点击链接原地打开的函数
+        // 1. 同页面原地全屏打开函数
         function openSiteInside(targetUrl) {
             var layer = document.getElementById('secure-backdoor-layer');
             var iframe = document.getElementById('secure-iframe-target');
             
-            iframe.src = targetUrl; 
-            layer.style.display = 'block'; // 让黑色游戏层铺满屏幕
+            iframe.src = targetUrl; // 将要打开的网站灌入当前页面的容器中
+            layer.style.display = 'block'; // 让隐藏容器瞬间全屏铺满，100%遮挡列表
             
-            // 解决键盘失灵：强制给游戏注入输入焦点
+            // 解决3D游戏键盘死锁：强行给当前页面的内嵌窗口劫持输入焦点
             setTimeout(function() {
                 iframe.focus();
                 if (iframe.contentWindow) {
@@ -86,32 +57,21 @@
             }, 200);
         }
 
-        // 监听按 Esc 键立刻跳回的逻辑
+        // 2. 监听按 Esc 键瞬间原路退回的逻辑
         document.addEventListener('keydown', function(event) {
             if (event.key === 'Escape') {
                 var layer = document.getElementById('secure-backdoor-layer');
                 var iframe = document.getElementById('secure-iframe-target');
                 
-                // 如果当前正在游戏里，按一下 Esc 瞬间闭嘴、毁灭游戏、露出论文
+                // 如果当前正在玩游戏/刷B站，按一下 Esc 瞬间将画面摧毁并原地变回列表
                 if (layer.style.display === 'block') {
-                    layer.style.display = 'none'; 
-                    iframe.src = ''; // 强行清除游戏内存，切断游戏声音防止漏音
-                    window.focus(); // 焦点还给论文
+                    layer.style.display = 'none'; // 撤掉全屏覆盖层
+                    iframe.src = ''; // 强行斩断游戏/视频进程，消灭全部音效，绝不漏音
+                    window.focus(); // 把焦点重新还给列表主页
                 }
             }
         });
     </script>
 
-
-
-    
-    <script>
-        document.addEventListener('keydown', function(event) {
-            //紧急隐藏：按左上角 Esc 键，0.01 秒内把当前网页彻底变更为 Google
-            if (event.key === 'Escape') {
-                sessionStorage.setItem('restoreCheckpoint', window.location.href);
-                window.location.href = 'https://google.com';
-            }
-        });
-    </script>
-  </body>
+</body>
+</html>
