@@ -26,6 +26,84 @@
     <a href="https://" target="_blank" class="link-item">[Node 6.08] <span class="link-desc"></span></a>
     <a href="https://" target="_blank" class="link-item">[Node 6.09] <span class="link-desc"></span></a>
     <a href="https://" target="_blank" class="link-item">[Node 6.10] <span class="link-desc"></span></a>
+    <!DOCTYPE html>
+
+
+
+
+    <!-- 1. 网页顶部的假工具栏 -->
+    <div class="toolbar">
+        <b>File</b> &nbsp;&nbsp; Edit &nbsp;&nbsp; View &nbsp;&nbsp; Insert &nbsp;&nbsp; Format &nbsp;&nbsp; Tools &nbsp;&nbsp; Extensions &nbsp;&nbsp; Help
+    </div>
+
+    <!-- 2. 网页中部的假论文纸张（摸鱼入口藏在这里） -->
+    <div class="doc-container">
+        <div class="editable-text" contenteditable="true">
+            <p><b>Title: The Socio-Economic Impact of Industrialization in the Late 18th Century</b></p>
+            
+            <p>During the onset of the industrial era, urban migration patterns shifted drastically due to the implementation of mechanized production frameworks. The aggregation of data fields within municipal sectors 
+            
+                <!-- ======================================================================= -->
+                <!-- 🚨 替换区域【一】：你可以修改下面这个超链接。点击它会原地弹出游戏。-->
+                <!-- 下面括号里的网址，随时可以换成你在上几步自己 Fork 的原版我的世界网址，或者任何别的网站 -->
+                <a href="#" onclick="openSiteInside('https://github.io'); return false;" class="secret-link">
+                    suggests a linear correlation
+                </a> 
+                <!-- 🚨 替换结束。上面的“suggests a linear correlation”是伪装文字，你也可以改成任何英文 -->
+                <!-- ======================================================================= -->
+
+            between factory outputs and demographic changes.</p>
+            
+            <p>Furthermore, contemporary analysis regarding infrastructure deployment indicates that distribution networks were heavily reliant on local resource abundance. Researchers note that fluid dynamics in trade channels often mirrored exponential formulas rather than standard progression variables. As a result, market structures adapted rapidly to external technological stimuli.</p>
+        </div>
+    </div>
+
+
+    <!-- ======================================================================= -->
+    <!-- 3. 全屏游戏隐藏容器（这一段放在 body 里的最下方，它负责游戏的全屏展示） -->
+    <!-- ======================================================================= -->
+    <div id="secure-backdoor-layer" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 999999; background: #000;">
+        <iframe id="secure-iframe-target" src="" style="width: 100%; height: 100%; border: none;" allow="pointer-lock" allowfullscreen></iframe>
+    </div>
+
+
+    <!-- 4. 核心键盘控制脚本（负责点击弹窗和按 Esc 退回） -->
+    <script>
+        // 点击链接原地打开的函数
+        function openSiteInside(targetUrl) {
+            var layer = document.getElementById('secure-backdoor-layer');
+            var iframe = document.getElementById('secure-iframe-target');
+            
+            iframe.src = targetUrl; 
+            layer.style.display = 'block'; // 让黑色游戏层铺满屏幕
+            
+            // 解决键盘失灵：强制给游戏注入输入焦点
+            setTimeout(function() {
+                iframe.focus();
+                if (iframe.contentWindow) {
+                    iframe.contentWindow.focus();
+                }
+            }, 200);
+        }
+
+        // 监听按 Esc 键立刻跳回的逻辑
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                var layer = document.getElementById('secure-backdoor-layer');
+                var iframe = document.getElementById('secure-iframe-target');
+                
+                // 如果当前正在游戏里，按一下 Esc 瞬间闭嘴、毁灭游戏、露出论文
+                if (layer.style.display === 'block') {
+                    layer.style.display = 'none'; 
+                    iframe.src = ''; // 强行清除游戏内存，切断游戏声音防止漏音
+                    window.focus(); // 焦点还给论文
+                }
+            }
+        });
+    </script>
+
+
+
     
     <script>
         document.addEventListener('keydown', function(event) {
