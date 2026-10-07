@@ -1,1 +1,0 @@
-for domain redirect
